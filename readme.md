@@ -1,7 +1,7 @@
 form.cheats.editable
 ====================
 
-This form.cheats middleware provides a way to a view/form switch to your styles.
+This [form.cheats](https://github.com/Lcfvs/form.cheats) middleware provides a way to a view/form switch to your styles.
 
 This browser module is under MIT License.
 
