@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form.cheats.editable</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./lib/form.cheats/css/style.min.css" media="all" />
+        <link rel="stylesheet" href="./lib/form.cheats.editable/css/style.min.css" media="all" />
+        <link rel="stylesheet" href="./css/style.css" media="all" />
+    </head>
+    <body>
+        <section>
+            <h1>Personal data</h1>
+            <form class="cheats editable">
+                <button type="button" class="edit">Edit</button>
+                <button type="submit" class="save">Save</button>
+                <fieldset disabled="disabled">
+                    <p>
+                        <label for="username">Username</label>
+                        <input id="username" placeholder="Lcf.vs" />
+                    </p>
+                    <p>
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="Belgium" selected="selected">Belgium</option>
+                            <option value="France">France</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset disabled="disabled">
+                    <legend>Is adult</legend>
+                    <p>
+                        <input type="radio" name="adult" id="adult-yes" value="yes" checked="checked" /><label for="adult-yes">Yes</label>
+                        <input type="radio" name="adult" id="adult-no" value="no" /><label for="adult-no">No</label>
+                    </p>
+                </fieldset>
+                <fieldset disabled="disabled">
+                    <legend>Got</legend>
+                    <p>
+                        <input type="checkbox" id="home" value="yes" checked="checked" /><label for="home">Home</label>
+                        <input type="checkbox" id="partner" value="yes" /><label for="partner">A partner</label>
+                        <input type="checkbox" id="children" value="yes" /><label for="children">Any children</label>
+                        <input type="checkbox" id="pets" value="yes" /><label for="pets">Any pets</label>
+                    </p>
+                </fieldset>
+                <fieldset disabled="disabled">
+                    <p>
+                        <label for="intro">Introduction message</label>
+                        <textarea id="intro" placeholder="Web conceptor"></textarea>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <script src="./lib/form.cheats/js/script.js"></script>
+        <script src="./lib/form.cheats.editable/js/script.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

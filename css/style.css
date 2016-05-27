@@ -1,63 +1,118 @@
-/*
-Copyright MIT 2016 Lcf.vs
-https://github.com/Lcfvs/form.cheats
-*/
-form.editable .edit,
-form.editable [type="submit"],
-form.editable [type="reset"] {
-    float: right;
-}
+@import url(./font-awesome.min.css);
 
-form.editable:not(.enabled) .edit,
-form.editable.enabled [type="submit"],
-form.editable.enabled [type="reset"] {
-    display: inline-block;
-}
-
-form.editable input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]),
-form.editable select,
-form.editable textarea {
-    box-sizing: border-box;
+body {
+    position: absolute;
+    text-align: center;
+    background-color: #00000b;
     width: 100%;
-}
-
-form.editable.enabled .edit,
-form.editable:not(.enabled) [type="submit"].save,
-form.editable:not(.enabled) [type="reset"],
-form.editable [disabled="disabled"] [type="submit"],
-form.editable [disabled="disabled"] [type="checkbox"]:not(:checked) + label,
-form.editable [disabled="disabled"] [type="radio"]:not(:checked) + label,
-form.editable [disabled="disabled"] [type="checkbox"] + label:before,
-form.editable [disabled="disabled"] [type="radio"] + label:before {
-    display: none;
-}
-
-form.editable [disabled="disabled"] input,
-form.editable [disabled="disabled"] select,
-form.editable [disabled="disabled"] textarea,
-form.editable [disabled="disabled"] [type="checkbox"]:checked + label,
-form.editable [disabled="disabled"] [type="radio"]:checked + label {
-    color: inherit;
-}
-
-form.editable [disabled="disabled"] input,
-form.editable [disabled="disabled"] select,
-form.editable [disabled="disabled"] textarea {
-    width: 100%;
-    border-color: transparent;
-    background-color: transparent;
-    text-indent: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-form.editable [disabled="disabled"] select {
-    margin-left: -.25em;
-}
-
-form.cheats [disabled="disabled"] input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]),
-form.cheats [disabled="disabled"] select,
-form.cheats [disabled="disabled"] textarea {
+    height: 100%;
+    margin: 0;
     padding: 0;
+    font-family: FontAwesome, Arial;
+    color: rgba(214, 214, 214, .4);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes vapors {
+    0% {
+        box-shadow: 0 0 1.813em 0.438em #3a3445, 0 0 3.125em #3a3445 inset, 0 0 .625em rgba(58, 52, 69, .6) inset;
+    }
+    
+    25% {
+        box-shadow: 0 0 1.813em 0.438em #3a3445, 0 0 3.125em #3a3445 inset, 0 -17.5em 8em rgba(58, 52, 69, .3) inset;
+    }
+    
+    100% {
+        box-shadow: 0 0 1.813em 0.438em #3a3445, 0 0 3.125em #3a3445 inset, 0 -17.5em 8em rgba(58, 52, 69, 0) inset;
+    }
+}
+
+section {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    border-radius: .625em;
+    box-shadow: 0 0 1.813em .438em #3a3445, 0 0 3.125em #3a3445 inset;
+    animation-name: vapors;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+section h1 {
+    margin: 0;
+    padding: 0.4em 0 0 0.55em;
+    background-color: rgba(58, 52, 69, 1);
+    border-radius: .313em .313em 0 0;
+    height: 1.75em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+form.cheats input:not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+form.cheats textarea,
+form.cheats select {
+    border: none;
+}
+
+/* /index */
+
+form.cheats.login {
+    width: 13em;
+}
+
+form.cheats.login fieldset span {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+form.cheats.login fieldset .account span:before {
+    content: '\f007';
+    margin-top: .05em;
+    margin-left: .25em;
+}
+
+form.cheats.login fieldset .password span:before {
+    content: '\f023';
+    margin-top: .09em;
+    margin-left: .25em;
+}
+
+form.cheats.login fieldset #login {
+    background-color: #00000b;
+    color: rgba(214, 214, 214, .8);
+    box-shadow: 0 0 .313em .313em #3a3445;
+    border-radius: .7em;
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0;
+}
+
+/* /editable */
+
+form.cheats.editable {
+    width: 15em;
+}
+
+form.cheats.editable [type="submit"],
+form.cheats.editable button {
+    margin-top: -3.2em;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: .3em;
+}
+
+form.cheats.editable fieldset:not([disabled="disabled"]) select,
+form.cheats.editable fieldset:not([disabled="disabled"]) input:not([type="button"]):not([type="reset"]):not([type="submit"]),
+form.cheats.editable fieldset:not([disabled="disabled"]) textarea {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .313em;
 }
