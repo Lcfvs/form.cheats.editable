@@ -56,6 +56,12 @@ form.editable [disabled="disabled"] select {
     margin-left: -.25em;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	form.editable [disabled="disabled"] select {
+        margin-left: 0;
+    }
+}
+
 form.cheats [disabled="disabled"] input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]),
 form.cheats [disabled="disabled"] select,
 form.cheats [disabled="disabled"] textarea {
