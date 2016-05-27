@@ -117,3 +117,10 @@ form.cheats input[type="radio"]:checked + label:before {
 form.cheats input[type="checkbox"]:checked + label:before {
     content: "■";
 }
+
+form.cheats input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]),
+form.cheats select,
+form.cheats textarea {
+    box-sizing: border-box;
+    width: 100%;
+}

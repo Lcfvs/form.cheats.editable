@@ -14,13 +14,6 @@ form.editable.enabled [type="reset"] {
     display: inline-block;
 }
 
-form.editable input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="reset"]):not([type="submit"]),
-form.editable select,
-form.editable textarea {
-    box-sizing: border-box;
-    width: 100%;
-}
-
 form.editable.enabled .edit,
 form.editable:not(.enabled) [type="submit"].save,
 form.editable:not(.enabled) [type="reset"],
@@ -56,7 +49,7 @@ form.editable [disabled="disabled"] select {
     margin-left: -.25em;
 }
 
-body:first-of-type form.editable [disabled="disabled"] select {
+:not(*:root) form.editable [disabled="disabled"] select {
     margin-left: 0;
 }
 

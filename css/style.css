@@ -70,20 +70,24 @@ form.cheats.login {
     width: 13em;
 }
 
-form.cheats.login fieldset span {
-    background-color: rgba(255, 255, 255, .8);
+form.cheats.login fieldset label {
+    margin-left: -1em;
 }
 
-form.cheats.login fieldset .account span:before {
+form.cheats.login fieldset .account:before {
     content: '\f007';
-    margin-top: .05em;
+    top: 1.15em;
     margin-left: .25em;
+    position: relative;
+    color: rgba(85, 85, 85, .6);
 }
 
-form.cheats.login fieldset .password span:before {
+form.cheats.login fieldset .password:before {
     content: '\f023';
-    margin-top: .09em;
+    top: 1.15em;
     margin-left: .25em;
+    position: relative;
+    color: rgba(85, 85, 85, .6);
 }
 
 form.cheats.login fieldset #login {
@@ -94,6 +98,14 @@ form.cheats.login fieldset #login {
     width: 1.4em;
     height: 1.4em;
     padding: 0;
+    margin-left: calc(50% - .7em);
+}
+
+form.cheats.login input[type="text"],
+form.cheats.login input[type="password"] {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .313em;
+    padding-left: 1.2em;
 }
 
 /* /editable */
@@ -115,4 +127,24 @@ form.cheats.editable fieldset:not([disabled="disabled"]) input:not([type="button
 form.cheats.editable fieldset:not([disabled="disabled"]) textarea {
     background-color: rgba(255, 255, 255, .8);
     border-radius: .313em;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(85, 85, 85, .6);
+}
+
+:-moz-placeholder {
+    color: rgba(85, 85, 85, .6);
+}
+
+::-moz-placeholder {
+    color: rgba(85, 85, 85, .6);
+}
+
+:-ms-input-placeholder {
+    color: rgba(85, 85, 85, .6);
+}
+
+::-ms-input-placeholder {
+    color: rgba(85, 85, 85, .6);
 }
