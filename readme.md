@@ -10,7 +10,8 @@ Demos
 -----
 
 http://lcfvs.github.io/form.cheats.editable
-http://lcfvs.github.io/form.cheats.editable/anochat (minimal designed)
+
+http://lcfvs.github.io/form.cheats.editable/anochat (minimal design)
 
 Install
 -------
