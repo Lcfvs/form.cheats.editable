@@ -5,6 +5,13 @@ This [form.cheats](https://github.com/Lcfvs/form.cheats) middleware provides a w
 
 This browser module is under MIT License.
 
+
+Demos
+-----
+
+http://lcfvs.github.io/form.cheats.editable
+http://lcfvs.github.io/form.cheats.editable/anochat (minimal designed)
+
 Install
 -------
 
