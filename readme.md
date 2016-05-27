@@ -27,8 +27,8 @@ In your HTML head :
 In your HTML body end :
 
 ```html
-  <script src="./lib/form.cheats/js/script.js"></script>
-  <script src="./lib/form.cheats.editable/js/script.js"></script>
+  <script src="./lib/form.cheats/js/script.min.js"></script>
+  <script src="./lib/form.cheats.editable/js/script.min.js"></script>
   <script src="./js/your-script.js"></script>
 ```
 
