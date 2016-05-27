@@ -1,0 +1,17 @@
+form.cheats.editable {
+    width: 30em;
+}
+
+form.cheats.editable button,
+form.cheats.editable [type="submit"] {
+    margin-top: 0;
+}
+
+form.editable .edit,
+form.editable .save {
+    margin-right: .5em;
+}
+
+form.cheats.editable #login {
+    width: 12em;
+}

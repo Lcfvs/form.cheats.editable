@@ -104,8 +104,8 @@ form.cheats input[type="radio"] + label:before {
 }
 
 form.cheats input[type="checkbox"] + label:before {
-    top: -.2em;
-    line-height: .44em;
+    top: -.1em;
+    line-height: .48em;
     font-size: .9em;
     border-radius: 12.5%;
 }

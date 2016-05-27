@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form.cheats.anochat</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./lib/form.cheats/css/style.min.css" media="all" />
+        <link rel="stylesheet" href="./lib/form.cheats.editable/css/style.min.css" media="all" />
+        <link rel="stylesheet" href="./css/anochat.css" media="all" />
+    </head>
+    <body>
+        <section>
+            <h1>Bienvenue sur le Chat de Developpez.com</h1>
+            <form class="cheats editable">
+                <input type="submit" value="Entrer" />
+                <button type="button" class="edit">Editer</button>
+                <input type="submit" name="save" class="save" value="Sauver et entrer" />
+                <fieldset disabled="disabled">
+                    <p>
+                        <label for="login">Identifiant</label>
+                        <input id="login" required="required" placeholder="Lcf.vs" />
+                    </p>
+                </fieldset>
+                <fieldset disabled="disabled">
+                    <legend>Salon de connexion initial</legend>
+                    <p>
+                        <input type="radio" name="salonConnexion" id="salonConnexion10" checked="checked" /><label for="salonConnexion10">Développement Web</label>
+                        <input type="radio" name="salonConnexion" id="salonConnexion20" checked="checked" /><label for="salonConnexion20">Développement Général</label>
+                        <input type="radio" name="salonConnexion" id="salonConnexion30" checked="checked" /><label for="salonConnexion30">Bases de données</label>
+                        <input type="radio" name="salonConnexion" id="salonConnexion40" checked="checked" /><label for="salonConnexion40">Taverne</label>
+                    </p>
+                </fieldset>
+                <fieldset disabled="disabled">
+                    <legend>Options de connexion</legend>
+                    <p>
+                        <input type="checkbox" id="identNoPv" name="identNoPv" value="1" checked="checked" /><label for="identNoPv">Pas de messages privés</label>
+                        <input type="checkbox" id="identPro" value="1" /><label for="identPro">Poste pro</label>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <script src="./lib/form.cheats/js/script.js"></script>
+        <script src="./lib/form.cheats.editable/js/script.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
