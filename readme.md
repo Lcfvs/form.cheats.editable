@@ -32,6 +32,9 @@ In your HTML body end :
   <script src="./js/your-script.js"></script>
 ```
 
+And add a `cheats editable` class on your forms
+
+
 Register the middleware
 -----------------------
 ```
